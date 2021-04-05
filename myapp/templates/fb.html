@@ -1,0 +1,65 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script src="{% static 'js/first.js'%}"></script> -->
+</head>
+
+<body>
+    <!-- <p id="p1">test</p>
+
+    <script>
+        document.write('new js')
+        console.log('test')
+        window.alert('test')
+        document.getElementById('p1').innerHTML = "new js changed"
+        document.getElementById('p1').align = "center"
+        document.getElementById('p1').style.color = 'red'
+    <!-- </script> -->
+    <!-- <input type="number" placeholder="enter number one" id="n1">
+    <input type="number" placeholder="enter number one" id="n2">
+    <label id="l1"></label>
+    <button onclick="Testfun()">click</button> -->-->
+    <p id="p1">data</p>
+    <img id='img1' src="{% static 'image/pic_bulboff.gif' %}" alt="">
+    <button onclick="testfunON()">ON</button>
+    <button onclick="testfunOFF()">OFF</button>
+    <input type="number" id="n1" placeholder="enter number">
+    <input type="number" id="n2" placeholder="enter number">
+    <label id="out"></label>
+    <button onclick="newfun()">click</button>
+
+    <script>
+        function newfun() {
+            n1 = Number(document.getElementById('n1').value)
+            n2 = Number(document.getElementById('n2').value)
+            sum = n1 + n2
+            console.log(sum)
+            document.getElementById('out').innerHTML = "the sum is" + sum
+
+        }
+        // function Testfun() {
+        //     x = Number(document.getElementById('n1').value)
+        //     y = Number(document.getElementById('n2').value)
+        //     sum = x + y
+        //         // alert (x + "+" + y + "=" +sum)
+        //     document.getElementById('l1').innerHTML = sum
+        // }
+        document.getElementById('p1').innerHTML = 'new data'
+
+        function testfunON() {
+            document.getElementById('img1').src = "{% static 'image/pic_bulbon.gif' %}"
+        }
+
+        function testfunOFF() {
+            document.getElementById('img1').src = "{% static 'image/pic_bulboff.gif' %}"
+        }
+    </script>
+</body>
+
+</html>

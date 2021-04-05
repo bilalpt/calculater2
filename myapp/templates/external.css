@@ -1,0 +1,35 @@
+h1 {
+    border-style: solid;
+}
+
+p {
+    text-align: center;
+    background-color: white;
+    font-size: 40px;
+    border: sandybrown;
+    border-style: dotted;
+}
+
+#align {
+    text-align: center;
+    background-color: white;
+    font-size: medium;
+    border-color: red;
+    border-style: dotted;
+}
+
+.og:hover {
+    background-color: royalblue;
+    border-radius: 50;
+}
+
+.gd:hover {
+    background-color: blue;
+    background-size: 50px;
+    font-size: 40px;
+    border-radius: 50;
+}
+
+.bd {
+    text-align: center;
+}

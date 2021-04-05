@@ -1,0 +1,26 @@
+input {
+    height: 50px;
+    width: 150px;
+    border-radius: 8px;
+    padding: 5px;
+    border: 1px solid blue;
+    background-color: brown;
+}
+
+button {
+    height: 50px;
+    width: 150px;
+    border-radius: 8px;
+    padding: 5px;
+    border: 1px solid blue;
+    background-color: rgb(187, 168, 199);
+}
+
+tr {
+    text-align: center;
+}
+
+table {
+    border: 1px solid black;
+    background-image: url(myapp/static/paris.jpg);
+}

@@ -1,0 +1,12 @@
+body {
+    background-image: url('/static/image/picture.jpg')
+}
+
+h1 {
+    color: rgb(23, 228, 91);
+    size: 20px;
+}
+
+body {
+    text-align: center;
+}
